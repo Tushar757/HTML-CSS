@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            width: 100%;
+			height: 100%;
+            margin: 0px;
+            padding: 0px;
+
+        }
+		
+	#div 
+	{
+    width: 100%;
+    height: 100%;    
+    position: relative;
+    -webkit-animation: mymove 5s 1; /* Chrome, Safari, Opera */ 
+    animation: mymove 5s 1;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards; 
+
+	}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes mymove {
+    0%   {top: 0px; left: 0px;}
+    100% {top: 0px; left: 0px; background: #eeeeee;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: 0px; left: 0px;}
+    100% {top: 0px; left: 0px; background: #eeeeee;}
+}
+
+@keyframes box1 {
+    
+	0%   {top: 30%; left: 100%; background: whitesmoke;}
+    25%  {top: 30%; left: 90%; background: whitesmoke;}
+    50%  {top: 30%; left: 80%; background: whitesmoke;}
+    75%  {top: 30%; left: 70%; background: whitesmoke;}
+    125% {top: 30%; left: 50%; background: whitesmoke;}
+    
+}
+
+.modal {
+    /* some styles to position the modal at the center of the page */
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    width: 300px;
+    height: 200px;
+   
+    background-color: whitesmoke;
+    text-align: center;
+	
+	-webkit-animation: box1 5s ease-in 7S; /* Chrome, Safari, Opera */ 
+    animation: box1 5s 1;
+      
+      /* needed styles for the overlay */
+    z-index: 10; /* keep on top of other elements on the page */
+
+      
+}
+
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+
+  }
+
+
+
+    </style>
+
+ 
+
+
+     <style>
+
+   .xyz  {
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    left: 10px;       
+    
+  
+}
+   
+    </style>
+
+    <style>
+
+
+.absolute {
+  position: absolute;
+  top: 120px;
+  right: 180px;
+  width: 1580px;
+  height: 650px;
+   opacity:0.6;
+   background-color:grey;
+   /*filter: alpha(opacity=40);*/
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    z-index: 10;
+
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+   }
+
+   }
+
+   
+
+     
+
+
+    </style>
+
+ 
+    
+</head>
+<body>
+
+
+   <div class=absolute> </div>
+    <div class="modal">I'm the modal window!</div>
+
+  
+
+  
+   <div class="xyz">
+
+       
+
+        <canvas id="myCanvas" width="1800" height="600"></canvas>
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+
+            context.beginPath();
+            context.rect(188, 10, 1500, 100);
+            context.fillStyle = '#FFA62F';
+            context.fill();
+            context.lineWidth = 0;
+            context.strokeStyle = 'black';
+            context.stroke();
+        </script>
+
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+
+            context.beginPath();
+            context.rect(188, 120, 140, 100);
+            context.fillStyle = 'Red';
+            context.fill();
+            context.lineWidth = 0;
+            context.strokeStyle = 'black';
+            context.stroke();
+        </script>
+
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+
+            context.beginPath();
+            context.rect(340, 130, 1200, 90);
+            context.fillStyle = '#43BFC7';
+            context.fill();
+            context.lineWidth = 0;
+            context.strokeStyle = 'black';
+            context.stroke();
+        </script>
+
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+
+            context.beginPath();
+            context.rect(1550, 120, 140, 100);
+            context.fillStyle = '#000000';
+            context.fill();
+            context.lineWidth = 0;
+            context.strokeStyle = 'black';
+            context.stroke();
+        </script>
+
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+
+            context.beginPath();
+            context.rect(300, 230, 1280, 120);
+            context.fillStyle = '#4CC417';
+            context.fill();
+            context.lineWidth = 0;
+            context.strokeStyle = 'black';
+            context.stroke();
+        </script>
+
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+
+            context.beginPath();
+            context.rect(188, 360, 1500, 100);
+            context.fillStyle = '#FFFF00';
+            context.fill();
+            context.lineWidth = 0;
+            context.strokeStyle = 'black';
+            context.stroke();
+        </script>
+
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+
+            context.beginPath();
+            context.rect(280, 470, 140, 100);
+            context.fillStyle = '#827B60';
+            context.fill();
+            context.lineWidth = 0;
+            context.strokeStyle = 'black';
+            context.stroke();
+        </script>
+
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+
+            context.beginPath();
+            context.rect(600, 470, 1088, 100);
+            context.fillStyle = '#F6358A';
+            context.fill();
+            context.lineWidth = 0;
+            context.strokeStyle = 'black';
+            context.stroke();
+        </script>
+
+        <!-- Vetical bar.. starting from bottom-->
+
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+
+            context.beginPath();
+            context.rect(445, 460, 130, 20);
+            context.fillStyle = '#6C2DC7';
+            context.fill();
+            context.lineWidth = 0;
+            context.strokeStyle = 'Black';
+            context.stroke();
+        </script>
+
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+
+            context.beginPath();
+            context.rect(445, 220, 130, 140);
+            context.fillStyle = '#6C2DC7';
+            context.fill();
+            context.lineWidth = 0;
+            context.strokeStyle = 'Black';
+            context.stroke();
+        </script>
+
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+
+            context.beginPath();
+            context.rect(445, 125, 130, 5);
+            context.fillStyle = '#6C2DC7';
+            context.fill();
+            context.lineWidth = 0;
+            context.strokeStyle = 'Black';
+            context.stroke();
+        </script>
+
+    </div>
+</body>
+</head>
+</html>
